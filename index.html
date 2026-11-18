@@ -29,6 +29,9 @@
          font-weight: 650; padding: 13px 22px; border-radius: 10px; font-size: 17px; }
   .btn:hover { filter: brightness(1.06); }
   .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); font-weight: 600; }
+  .btn.ghost:hover { background: var(--sunken); filter: none; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .meta { color: var(--muted); font-size: 14px; margin-top: 10px; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin-top: 24px; }
   h2 { font-size: 20px; margin: 0 0 12px; }
@@ -57,10 +60,16 @@
   <p class="lead">A Chrome extension that removes Grand Theft Auto VI posts, videos, thumbnails, comments and search suggestions from
     YouTube, Reddit, X, Instagram, TikTok and Google, before they're drawn on screen. Everything runs in your browser: no account, no data collected.</p>
 
-  <a class="btn" href="spoilershield-1.0.0.zip" download>
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-    Download SpoilerShield 1.0.0
-  </a>
+  <div class="actions">
+    <a class="btn" href="spoilershield-1.0.0.zip" download>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Download SpoilerShield 1.0.0
+    </a>
+    <a class="btn ghost" href="https://ko-fi.com/spoilershield" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M7 2v2M11 2v2M15 2v2"/></svg>
+      Support on Ko-fi
+    </a>
+  </div>
   <p class="meta">Zip file, 36 KB · Chrome, Edge, Brave and other Chromium browsers on a computer (not phones)</p>
 
   <section class="card">
@@ -88,12 +97,18 @@
   </section>
 
   <section class="card">
+    <h2>Support SpoilerShield</h2>
+    <p style="margin:0 0 14px">SpoilerShield is free and has no ads or tracking. If it saved your playthrough, a coffee helps keep it updated as YouTube, TikTok and the rest change their sites.</p>
+    <a class="btn ghost" href="https://ko-fi.com/spoilershield" target="_blank" rel="noopener">Buy me a coffee on Ko-fi</a>
+  </section>
+
+  <section class="card">
     <h2>Chrome Web Store version</h2>
     <p class="muted" style="margin:0">SpoilerShield has been submitted to the Chrome Web Store and is waiting for review. Once it's approved, you can install it from there with one click and get automatic updates. You can then remove this copy from <code>chrome://extensions</code>.</p>
   </section>
 
   <footer>
-    <a href="privacy-policy.html">Privacy policy</a> · SpoilerShield is an independent project and is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.
+    <a href="privacy-policy.html">Privacy policy</a> · <a href="https://ko-fi.com/spoilershield" target="_blank" rel="noopener">Support on Ko-fi</a> · SpoilerShield is an independent project and is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.
   </footer>
 </main>
 </body>

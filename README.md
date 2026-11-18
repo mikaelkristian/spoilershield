@@ -8,7 +8,8 @@
 
 <p align="center">
   <a href="https://mikaelkristian.github.io/spoilershield/"><strong>Download page</strong></a> ·
-  <a href="https://mikaelkristian.github.io/spoilershield/privacy-policy.html">Privacy policy</a>
+  <a href="https://mikaelkristian.github.io/spoilershield/privacy-policy.html">Privacy policy</a> ·
+  <a href="https://ko-fi.com/spoilershield">Support on Ko-fi</a>
 </p>
 
 ---
@@ -74,6 +75,10 @@ Full details are in the [privacy policy](https://mikaelkristian.github.io/spoile
 - **Text only.** SpoilerShield reads titles, captions, comments, image alt text and links. It does **not** analyse images or video, so a spoiler that exists only inside a thumbnail can get through. Strict mode hides cards that have no text to check.
 - **Websites change.** If a site redesigns its pages, some items may slip through until the extension is updated. Strict mode with **fail-closed** turned on covers pages SpoilerShield can't recognise.
 - Doesn't work in mobile browsers. Chrome on phones doesn't support extensions.
+
+## Support
+
+SpoilerShield is free, with no ads and no tracking. If it saved your playthrough, you can [buy me a coffee on Ko-fi](https://ko-fi.com/spoilershield). It helps keep the extension updated as sites change.
 
 ## Something got through?
 
