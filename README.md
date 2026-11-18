@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/35030677/README.md)
 <p align="center">
   <img src="icon.png" width="96" height="96" alt="SpoilerShield icon">
 </p>
