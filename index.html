@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpoilerShield</title>
+<meta name="description" content="A Chrome extension that hides Grand Theft Auto VI posts, videos, comments and spoilers on YouTube, Reddit, X, Instagram, TikTok and Google. Runs entirely in your browser.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --sunken: #eef1f4; --text: #15191e; --muted: #5d6773;
+    --line: #dde1e6; --accent: #2f7d57; --accent-ink: #ffffff; --warn-bg: #fff6e0; --warn-line: #f0d48a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216; --surface: #171b21; --sunken: #1e232a; --text: #e9edf1; --muted: #98a2ad;
+      --line: #2a3038; --accent: #7dd3a8; --accent-ink: #0b2016; --warn-bg: #2a2414; --warn-line: #5c4b1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 56px; height: 56px; flex: none; }
+  h1 { margin: 0; font-size: 34px; letter-spacing: -0.02em; line-height: 1.1; }
+  .tag { margin: 4px 0 0; color: var(--muted); }
+  .lead { font-size: 18px; margin: 28px 0 20px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+         font-weight: 650; padding: 13px 22px; border-radius: 10px; font-size: 17px; }
+  .btn:hover { filter: brightness(1.06); }
+  .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin-top: 24px; }
+  h2 { font-size: 20px; margin: 0 0 12px; }
+  ol { margin: 0; padding-left: 22px; }
+  ol li { margin: 10px 0; padding-left: 4px; }
+  code { background: var(--sunken); padding: 2px 6px; border-radius: 5px; font-size: 0.92em; overflow-wrap: anywhere; }
+  .note { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 10px; padding: 12px 16px; margin-top: 16px; font-size: 15px; }
+  ul.plain { margin: 0; padding-left: 20px; }
+  ul.plain li { margin: 6px 0; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
+  @media (max-width: 520px) { h1 { font-size: 28px; } .card { padding: 18px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>SpoilerShield</h1>
+      <p class="tag">Hide game spoilers before they reach your screen.</p>
+    </div>
+  </header>
+
+  <p class="lead">A Chrome extension that removes Grand Theft Auto VI posts, videos, thumbnails, comments and search suggestions from
+    YouTube, Reddit, X, Instagram, TikTok and Google, before they're drawn on screen. Everything runs in your browser: no account, no data collected.</p>
+
+  <a class="btn" href="spoilershield-1.0.0.zip" download>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+    Download SpoilerShield 1.0.0
+  </a>
+  <p class="meta">Zip file, 36 KB · Chrome, Edge, Brave and other Chromium browsers on a computer (not phones)</p>
+
+  <section class="card">
+    <h2>Install in 2 minutes</h2>
+    <ol>
+      <li><strong>Unzip the download.</strong> On a Mac, double-click the zip. On Windows, right-click it and choose <em>Extract All</em>. You'll get a folder called <code>spoilershield-1.0.0</code>.</li>
+      <li><strong>Move that folder somewhere permanent</strong>, such as Documents. Chrome loads the extension from this folder every time, so don't delete it.</li>
+      <li>Open a new tab and go to <code>chrome://extensions</code>. In Edge use <code>edge://extensions</code>, in Brave <code>brave://extensions</code>.</li>
+      <li>Turn on <strong>Developer mode</strong> (switch at the top right).</li>
+      <li>Click <strong>Load unpacked</strong> and select the <code>spoilershield-1.0.0</code> folder. Select the folder itself, the one that contains <code>manifest.json</code>.</li>
+      <li><strong>Reload</strong> any YouTube, Reddit, X, Instagram, TikTok or Google tabs that were already open.</li>
+      <li>Optional: click the puzzle-piece icon in the toolbar and pin SpoilerShield so you can see how much it has hidden.</li>
+    </ol>
+    <div class="note">Chrome may sometimes remind you that you have "developer mode" extensions turned on. That's expected for extensions installed this way. Close the message and SpoilerShield keeps working.</div>
+  </section>
+
+  <section class="card">
+    <h2>Tips</h2>
+    <ul class="plain">
+      <li><strong>Strict mode</strong> (in the toolbar popup) keeps every card hidden until it has been checked, and hides cards with no text to check. Recommended now that the game is out and spoiler titles get vaguer.</li>
+      <li>By default it also hides anything mentioning <em>Lucia</em>, <em>Jason</em>, <em>ending</em>, <em>death</em> or <em>dies</em>, even outside GTA. Turn the "Spoiler words" category off in <em>Keywords &amp; settings</em> if that's too much.</li>
+      <li>Add your own words in <em>Keywords &amp; settings</em> to block other games or shows too.</li>
+      <li>It reads text, not images. A spoiler that exists only inside a thumbnail can get through, though Strict mode hides cards with no text.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Chrome Web Store version</h2>
+    <p class="muted" style="margin:0">SpoilerShield has been submitted to the Chrome Web Store and is waiting for review. Once it's approved, you can install it from there with one click and get automatic updates. You can then remove this copy from <code>chrome://extensions</code>.</p>
+  </section>
+
+  <footer>
+    <a href="privacy-policy.html">Privacy policy</a> · SpoilerShield is an independent project and is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.
+  </footer>
+</main>
+</body>
+</html>
